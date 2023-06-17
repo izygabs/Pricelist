@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto:wght@300&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: hsl(240, 78%, 98%);
+  font-family: "Montserrat", sans-serif;
+  background-image: url(./bg-bottom.svg), url(./bg-top.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0% 100%, 105% 0%;
+  background-size: 25%, 25%;
+}
+.section {
+  box-sizing: border-box;
+  width: 80%;
+}
+.navbar {
+  /* border: 1px solid black; */
+  text-align: center;
+  line-height: 1rem;
+  margin-left: 17rem;
+}
+.navbar h2 {
+  color: hsl(233, 13%, 49%);
+  font-weight: 700;
+}
+.toggle {
+  /* border: 1px solid red; */
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.toggle input {
+  display: none;
+}
+.togg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 30px;
+  transition: 0.4s;
+}
+.togg::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+input:checked + .togg {
+  background-color: white;
+}
+input:checked + .togg::before {
+  transform: translate(26px);
+}
+.togglebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 14rem;
+  margin-left: 14.8rem;
+}
+.togglebar p {
+  color: hsl(234, 14%, 74%);
+  font-weight: 500;
+}
+.tog {
+  height: 3rem;
+}
+.content {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 35rem;
+  width: 60rem;
+  align-items: center;
+  /* margin-top: -1rem; */
+  margin-left: 9rem;
+}
+.card {
+  /* border: 1px solid blue; */
+  font-size: 25px;
+  font-weight: 500;
+  height: 31rem;
+  width: 32rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+  box-shadow: 8;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card2 {
+  /* border: 1px solid blue; */
+  font-size: 25px;
+  font-weight: 500;
+  height: 30rem;
+  width: 32rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  background: white;
+  color: hsl(232, 13%, 33%);
+  box-shadow: 8;
+}
+.card2:hover {
+  transform: scale(1.1);
+}
+.card button {
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  color: hsl(236, 72%, 79%);
+  cursor: pointer;
+  background-color: white;
+}
+.card button:hover {
+  border: 1px solid white;
+  color: white;
+  background-color: hsl(237, 63%, 64%);
+}
+.card2 button {
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  background-color: hsl(236, 72%, 79%);
+}
+.card2 button:hover {
+  border: 1px solid hsl(236, 72%, 79%);
+  color: hsl(236, 72%, 79%);
+  background-color: white;
+}
+.head {
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+  height: 5rem;
+  width: 16rem;
+  margin-left: 1.5rem;
+}
+.para {
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+  height: 3rem;
+  width: 16rem;
+  margin-left: 1.5rem;
+}
+.top {
+  /* border: 1px solid black; */
+  height: 15rem;
+  margin-top: -4rem;
+  /* margin-right: 3rem; */
+}
+.bot {
+  /* border: 1px solid black; */
+  height: 9rem;
+  margin-bottom: -10rem;
+  margin-right: -3rem;
+}
